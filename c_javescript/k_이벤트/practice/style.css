@@ -1,0 +1,72 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+
+#todo-app {
+  padding: 20px;
+
+  background-color: #ffffff;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 수평 수직*/
+
+}
+
+#todo-input {
+  /*
+  clac()함수: calculation(계산)
+  >> 다양한 단위에 대한 복합 계산
+  */
+  padding: 10px;
+  border-bottom: 10px;
+  margin-bottom: 5px;
+  width: calc(100% - 24px);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#add-button {
+  padding: 10px;
+  border: none;
+  width: 100%;
+  background-color: #5cb86c;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+#add-button:hover {
+  background-color: #4cae4c;
+}
+
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* 동적 생성 될 li 태그 스타일링 */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}

@@ -1,0 +1,696 @@
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+}
+
+#conteiner {
+  margin: 0 auto;
+  width: 1280px;
+}
+
+/* 제일 위의 검은색 박스 + nav */
+header {
+  width: 1280px;
+  height: 128px;
+}
+
+/* 제일 위의 검은색 박스*/
+#header {
+  display: flex;
+  justify-content: end;
+
+  width: 1280px;
+  height: 38px;
+
+  background-color: #2b2a2a;
+}
+
+/* 검은 박스안 모양들 */
+#benner {
+  display: flex;
+  
+  width: 451px;
+  height: 38px;
+}
+
+/* 검은 박스안 글자들만 */
+#benner-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  width: 230px;
+}
+
+/* 검은 박스안 글자들 a태그 정리 */
+#benner-left a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+/* language와 돋보기 모양 */
+#benner-right {
+  display: flex;
+}
+
+/* language박스 */
+#benner-right div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+
+  width: 100px;
+  height: 37px;
+  
+  background-color: #555;
+  color: #fff;
+
+}
+
+#benner-right div span {
+  font-size: 12px;
+}
+
+/* img를 캡쳐해와서 사이즈 조절 */
+#benner-right img {
+  width: 38px;
+  height: 37px;
+}
+
+/* 위의 nav바 */
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 88px;
+}
+
+/* logo를 캡쳐해와서 사이즈 조절 */
+#nav img {
+  height: 80px;
+}
+
+/* nav안 글자 */
+#nav a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* img넣는 div */
+#main-image {
+  width: 100%;
+  height: 450px;
+}
+
+/* 제일 큰 이미지 캡쳐해와서 사이즈 조절*/
+#main-image img{
+  width: 1280px;
+  height: 450px;
+}
+
+/* 검색하는 곳 */
+#search-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 80px;
+
+  background-color: #009999;
+}
+
+/* 통합검색 글자 */
+#search-area p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* 검색하는 곳(둥근곳) */
+#search-box {
+  display: flex;
+  align-items: center;
+
+  padding-left: 30px;
+  margin-left: 10px;
+
+  width: 570px;
+  height: 50px;
+
+  background-color: white;
+  border-radius: 25px;
+}
+
+/* 검색하는 박스 */
+#search-box textarea {
+  resize: none;
+  border: none;
+
+  width: 450px;
+  height: 25px;
+
+  font-size: 14px;
+}
+
+#search-box i {
+  margin-left: 30px;
+
+  font-size: 35px;
+  color: #009999;
+}
+
+/* 주요서비스 box */
+#main-service {
+  padding: 80px 0;
+
+  border-bottom: 1px solid gray;
+  width: 100%;
+  height: 581px;
+}
+
+/* 주요 서비스 글 */
+#main-service h2 {
+  margin-bottom: 30px;
+  
+  text-align: center;
+
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* 주요서비스 회색 box */
+#service-list {
+  display: flex;
+  margin: 0 auto;
+
+  width: 1200px;
+  height: 200px;
+  
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* 주요서비스 하나하나 box */
+#service-list div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 240px;
+  height: 198px;
+
+  border-right: 1px solid gray;
+}
+
+/* 마지막에는 세로줄 안보이게 */
+#service-list div:last-child {
+  border-right: none;
+}
+
+#service-list div i {
+  font-size: 60px;
+}
+
+#service-list div p {
+  font-size: 18px;
+}
+
+/* 주요 서비스 초록박스들 */
+#service-list02 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  width: 1200px;
+  height: 90px;
+
+}
+
+/* 1,3번쨰 박스는 같은 조건 */
+.list {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+
+  width: 380px;
+  height: 90px;
+
+  background-color: #009999;
+  border-radius: 10px;
+
+  font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+}
+
+.list i {
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+/* 2번째 박스는 색이 다름 */
+#issued {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+
+  width: 380px;
+  height: 90px;
+
+  background-color: #60cdc7;
+  border-radius: 10px;
+
+  font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+}
+
+#issued i {
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+/* 안내,문의 */
+#info-area {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 330px;
+  margin: 80px auto;
+}
+
+/* 전화번호 box */
+#tel-box {
+  display: flex;
+  align-items: center;
+  padding: 35px 0px 0px 30px;
+
+  width: 580px;
+  height: 170px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background-color: #f9f9f9;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* 전화번호 */
+#tel-number {
+  font-size: 50px;
+  color: #009999;
+  margin-top: 10px;
+}
+
+/* 전화모양 아이콘 */
+#tel-box i {
+  margin-left: 150px;
+
+  font-size: 70px;
+  margin-bottom: 40px;
+}
+
+/* 병원box 2개 */
+#hospital-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  width: 580px;
+}
+
+/* 암,어린이병원 box */
+.hospital {
+  padding: 25px 0px 0px 30px;
+
+  width: 270px;
+  height: 120px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* (암병원,어린이병원) */
+.hospital a {
+  font-size: 24px;
+  font-weight: 500;
+
+  text-decoration: none;
+  color: black;
+}
+
+/* 병원 전화번화 */
+.hospital-tel {
+  margin-top: 10px;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #009999;
+}
+
+/* 건강 증진센터 box */
+#health {
+  padding: 30px;
+
+  width: 580px;
+  height: 170px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background-color: #fff;
+}
+
+/* 건강증진센터,전화번호 */
+#health-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+#health-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#health-tel {
+  font-size: 20px;
+  font-weight: 600;
+  color: #009999;
+}
+
+/* 주황색 box들 */
+#health-boxes {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* box하나하나 */
+.health-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 35px;
+  width: 150px;
+
+  border-radius: 5px;
+  background-color: #ff9c1d;
+  color: #fff;
+}
+
+#info {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 40px;
+}
+
+#info div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 270px;
+  height: 120px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  
+  color: black;
+}
+
+/* 건강이야기 회색 박스 */
+#health-area {
+  padding: 80px 0px;
+
+  width: 100%;
+  height: 695px;
+  background-color: #f9f9f9;
+
+}
+
+#health-story {
+  margin: 0px auto;
+
+  width: 1200px;
+  height: 535px;
+}
+
+#health-story h1 {
+  margin-bottom: 30px;
+
+  font-size: 40px;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+#health-info {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+}
+
+.health {
+  padding-top: 35px;
+
+  width: 578px;
+  height: 288px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+
+  text-align: center;
+}
+
+#health-left h2, #health-right h2 {
+  margin: 0px auto;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#health-video {
+  margin: 30px auto;
+  width: 420px;
+  height: 180px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#health-video span {
+  padding-top: 10px;
+
+  font-size: 18px;
+  color: #444;
+}
+
+#health-video img {
+  width: 198px;
+  height: 132px;
+}
+
+#encyclopedias {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+
+  width: 578px;
+}
+
+.encyclopedia {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 270px;
+  height: 80px;
+
+  border: none;
+  border-radius: 10px;
+  background-color: #ff9c1d;
+  color: #fff;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.encyclopedia i {
+  font-size: 35px;
+}
+
+#informations {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+
+  width: 578px;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 270px;
+  height: 80px;
+
+  border: none;
+  border-radius: 10px;
+  background-color: #009999;
+  color: #fff;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.information i {
+  font-size: 35px;
+}
+
+/* 공지사항,뉴스 */
+#news-area {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  padding: 80px 0px;
+
+  width: 1200px;
+  height: 546px;
+}
+
+#news-leftbox, #news-rightbox {
+  width: 580px;
+  height: 386px;
+}
+
+#notice-box, #news-box {
+  width: 580px;
+  height: 226px;
+}
+
+#notice-box h2, #news-box h2 {
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#notice-list, #news-list{
+  padding: 20px 30px;
+
+  width: 580px;
+  height: 170px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+#notice-list p, #news-list p {
+  font-size: 18px;
+  color: #444;
+  font-weight: 500;
+}
+
+.news-img {
+  width: 580px;
+  height: 120px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+
+/* sns */
+#sns-area {
+  width: 100%;
+  height: 314px;
+  padding: 80px 0px;
+  background-color: #f9f9f9;
+}
+
+#sns-area h2 {
+  margin-bottom: 30px;
+  text-align: center;
+
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#social-media {
+  display: flex;
+  width: 651px;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+
+.sns {
+  width: 63px;
+  height: 64px;
+  border: 1px solid #ddd;
+  background-color: #009999;
+  border-radius: 10px;
+}
+
+/* 밑에 동그란 버튼들*/
+#bnr-swiper {
+  margin: 80px auto;
+  padding: 0px 750x;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 1050px;
+  height: 150px;
+  
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+  height: 150px;
+
+  border: 1px solid #ddd;
+  border-radius: 50%;
+
+  font-size: 15px;
+}
+
+
+#bnr-swiper i {
+  font-size: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 307px;
+  background-color: #7e8389;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex02.html</title>
+  <style> 
+    #container {
+      width: 700px;
+      height: 500px;
+      border: 1px solid black;
+      display: flex; 
+      /* 1) inner에 flex - 사각형4개가 왼쪽 위로 붙어있음 */
+      justify-content: space-between;
+      /* 2) inner를 양쪽끝으로 - 2개씩 세로로 붙어서 양쪽으로 */
+    }
+
+    .inner {
+      display: flex;
+      /* 3) box들에 flex넣기 - 가로로 배치*/
+      flex-direction: column;
+      /* 4) column주기 - 세로로 배치 */
+      justify-content: space-between;
+      /* 5) column이라 space-between이 위,아래로 나눠짐 
+      -세로로 놓아져 있는 box들 위,아래로 나누기 */
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="inner">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="inner">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    
+  </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log('외부 JS파일 입니다');

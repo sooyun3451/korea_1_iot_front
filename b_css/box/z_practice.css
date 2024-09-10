@@ -1,0 +1,32 @@
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: navy;
+}
+
+#highlight {
+  font-style: italic;
+  background: linear-gradient(to top, yellow 100%, transparent 40%);
+}
+
+ul li {
+  list-style-type: square;
+}
+
+table, tr, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+#footer {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px dashed red;
+}

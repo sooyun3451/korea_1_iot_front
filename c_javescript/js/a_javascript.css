@@ -1,0 +1,12 @@
+button {
+  margin: 20px;
+  padding: 20px;
+  border: 5px dotted black;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+
+  background-color: #f6e419;
+  text-transform: uppercase; /* 전체 영문자 대문자로 */
+}
+

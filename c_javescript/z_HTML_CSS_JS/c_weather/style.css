@@ -1,0 +1,145 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  position: relative;
+
+  width: 1440px;
+  height: 100vh;
+
+  background-image: url("./image/sunny.jpg");
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 1440px;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#weather-info {
+  position: relative; /* dark모드시 글자 흰색으로 보이게 하기 위해서 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 920px;
+}
+
+#now {
+  margin: 30px 20px;
+
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  width: 430px;
+  height: 110px;
+}
+
+#weather h3 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+#weather h4 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#weather-detail {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 520px;
+  height: 100vh;
+
+  border-radius: 20px 0px 0px 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#search {
+  position: absolute;
+  margin-top: 20px;
+  padding: 10px 10px;
+
+  width: 450px;
+  height: 40px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 20px 0px 0px 0px;
+}
+
+/* #search::-webkit-input-placeholder {
+  color: black;
+} */
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 450px;
+
+  width: 450px;
+  height: 200px;
+}
+
+.contents p {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contents hr {
+  width: 450px;
+  border: 1px solid black;
+}
+
+.contents div {
+  display: flex;
+  margin: 10px 20px;
+  justify-content: space-between;
+
+  font-size: 24px;
+  font-weight: 500;
+}
+
+button {
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+
+  width: 70px;
+  height: 30px;
+
+  border-radius: 25px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+}
+
